@@ -1,0 +1,336 @@
+/* @font-face {
+    font-family: "Fungal";
+    src: url('assets/fonts/Fungal-Grow100Thickness1000.woff');
+} */
+
+@font-face {
+    font-family: 'HKGrotesk';
+    src: url('../fonts/HKGrotesk-Regular.woff');
+}
+
+* {
+    cursor: url(assets/gun.gif) 0 25, auto;
+  }
+
+body {
+    font-family: 'HKGrotesk', sans-serif;
+    background-color: rgb(44, 44, 44)
+}
+
+/* FONTS DONT LOAD. fixed */
+
+header {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* on header hover could make an image appear in the background */
+
+header > nav {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 45px;
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 30%;
+    padding-bottom: 25%;
+}
+
+.drawing1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0.7;
+    height: 100vh;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px red, 0px 0px 1px red, 0px 0px 3px red;
+}
+
+/* header > p {
+    text-align: center;
+    padding-top: 30%;
+    font-size: 25px;
+} */
+
+h1:hover {
+    color: rgb(255, 0, 0);
+    /* cursor: crosshair; */
+}
+
+header > h1 {
+    margin-top: 22%;
+    margin-bottom: 10%;
+    font-size: 100px;
+    text-align: center;
+    color: black;
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+   /* background-color: white; */
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   padding-left: 5%;
+   padding-right: 5%;
+    padding-top: 5%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+
+}
+
+main > h2 {
+    font-size: 30px;
+}
+
+main > p {
+    font-size: 20px;
+}
+
+main > article > section > p {
+    text-indent: 2rem;
+}
+
+main > article > section > p:first-of-type {
+    text-indent: 0rem;
+}
+
+ .abstract-block {
+    /* background-color: red; */
+    padding-bottom: 50%;
+}
+
+.abstract-block p{
+    font-size: 25px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px; 
+}
+
+.abstract-block h2 {
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.introduction-block {
+    padding-bottom: 50%;
+}
+
+.introduction-block p{
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px red, 0px 0px 1px red, 0px 0px 1px red;
+    /* -webkit-text-stroke-color: red;
+    -webkit-text-stroke-width: 1px; */
+    /* font-family: 'HKGrotesk';  */
+    font-size: 25px;
+  
+}
+
+.introduction-block h2{
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.chapter-1-block p {
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px red, 0px 0px 1px rgb(129, 0, 0), 0px 0px 0.5px rgb(129, 0, 0);
+}
+
+.chapter-1-block h2 {
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+/* .image-chapter-1 {
+    display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+
+/* works for first two images as they should */
+.figures{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+color: white;
+align-items: top;
+/* justify-content: stretch; */
+/* max-width: 100%; */
+
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+}
+
+img{
+    min-width: 0;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+/* .image2-chapter-1 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48%;
+    padding-left: 5%;
+} */
+
+.subchapter-1-block h2 {
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.subchapter-1-block p {
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px red, 0px 0px 1px;
+}
+
+.chapter-2-block h2 {
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.chapter-2-block p {
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(198, 0, 0), 0px 0px 1px;
+}
+
+.subchapter-2-block h2 {
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.subchapter-2-block p {
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(0, 0, 0), 0px 0px 1px;
+}
+
+.chapter-3-block h2 {
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.chapter-3-block p {
+    color:rgb(16, 16, 16);
+    font-size: 25px;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(0, 0, 0), 0px 0px 2px;
+}
+
+.subchapter-3-block h2 {
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.subchapter-3-block p {
+    color:rgb(24, 24, 24);
+    font-size: 25px;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(53, 53, 53), 0px 0px 4px;
+}
+
+.conclusion-block h2 {
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.conclusion-block p {
+    color:rgb(28, 28, 28);
+    font-size: 25px;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px rgb(43, 43, 43), 0px 0px 3px rgb(53, 53, 53), 0px 0px 4px;
+}
+
+
+
+/* mobile version here */
+@media (max-width: 600px) {
+        /* everything that u wanna change goes here for mobile */
+}
+
+
+
+
+
+
+/* how can i target specific chapters */
+
+
+
+
+/*# sourceMappingURL=master.css.map */
+
+
