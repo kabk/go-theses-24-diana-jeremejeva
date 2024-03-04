@@ -8,23 +8,102 @@
     src: url('../fonts/HKGrotesk-Regular.woff');
 }
 
+
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  /* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  } */
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(9, 9, 9); 
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e20202; 
+  }
+
+
 * {
     cursor: url(assets/gun.gif) 0 25, auto;
   }
 
-body {
+  body {
     font-family: 'HKGrotesk', sans-serif;
-    background-color: rgb(44, 44, 44)
+    margin: 0;
+    padding: 0;
+    background-color: rgba(210,208,204,1);
+    /* background: linear-gradient(190deg, rgb(21, 21, 21) 0%, rgb(75, 30, 30) 50%, rgba(210,208,204,1) 100%); */
+    /* background-image: url('../bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    */
+    /* background-blend-mode: difference; */
 }
+
+
+
 
 /* FONTS DONT LOAD. fixed */
 
-header {
-    font-size: 20px;
-    text-align: center;
+
+
+.test {
+    width: 20%;
 }
 
+.imagegrow {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.imagegrow img {
+    border-radius: 10px;
+    z-index: 999;
+    width: 40%;
+    transition: transform 0.8s ease; /* Add a smooth transition effect */
+}
+
+.imagegrow:hover img {
+    transform: scale(2); /* Increase the size of the image on hover */
+}
+
+.title-container {
+    background-color: rgb(31, 31, 31);
+    background-image: url(../background2.png);
+    background-size: cover;
+    color: black;
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 250px;
+    width: auto;
+    height: 100vh;
+    display: inline-block;
+    width: 100%;
+}
+
+/* not really working */
+
+
+
+
+/* header {
+    font-size: 20px;
+    text-align: center;
+} */
+
 /* on header hover could make an image appear in the background */
+
+
 
 header > nav {
     width: 50%;
@@ -35,7 +114,7 @@ header > nav {
     font-family: "becker-gothics-concave", serif;
     font-weight: 400;
     font-style: normal;
-    padding-top: 30%;
+    padding-top: 10%;
     padding-bottom: 25%;
 }
 
@@ -43,11 +122,16 @@ header > nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 98vw;
     user-select: none;
     pointer-events: none;
-    opacity: 0.7;
-    height: 100vh;
+    opacity: 0.9;
+    height: 100vw;
+    top: -35vh;
+}
+.drawing1 img {
+    width: 100%;
+    height: 100%;
 }
 
 a {
@@ -66,27 +150,19 @@ a:hover {
     font-size: 25px;
 } */
 
+
 h1:hover {
     color: rgb(255, 0, 0);
     /* cursor: crosshair; */
 }
 
-header > h1 {
-    margin-top: 22%;
-    margin-bottom: 10%;
-    font-size: 100px;
-    text-align: center;
-    color: black;
-    font-family: "becker-gothics-concave", serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
 
 main {
    /* background-color: white; */
-   margin-left: auto;
+   /* margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   width: 50%; */
    padding-left: 5%;
    padding-right: 5%;
     padding-top: 5%;
@@ -102,17 +178,20 @@ main > p {
     font-size: 20px;
 }
 
-main > article > section > p {
+/* main > article > section > p {
     text-indent: 2rem;
-}
+} */
 
-main > article > section > p:first-of-type {
+/* main > article > section > p:first-of-type {
     text-indent: 0rem;
-}
+} */
 
- .abstract-block {
+.abstract-block {
     /* background-color: red; */
-    padding-bottom: 50%;
+    padding-bottom: 10%;
+    margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 
 .abstract-block p{
@@ -133,7 +212,10 @@ main > article > section > p:first-of-type {
 }
 
 .introduction-block {
-    padding-bottom: 50%;
+    /* padding-bottom: 5%; */
+    margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 
 .introduction-block p{
@@ -152,14 +234,17 @@ main > article > section > p:first-of-type {
     color:black;
     font-size: 50px;
     text-align: center;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .chapter-1-block p {
     color:rgb(0, 0, 0);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px red, 0px 0px 1px rgb(129, 0, 0), 0px 0px 0.5px rgb(129, 0, 0);
+    margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 
 .chapter-1-block h2 {
@@ -169,48 +254,90 @@ main > article > section > p:first-of-type {
     color:black;
     font-size: 50px;
     text-align: center;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
-/* .image-chapter-1 {
-    display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 
-/* works for first two images as they should */
-.figures{
+
+/* works for first two images as they should*/
+.figures {
+    gap: 20px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 10px;
-color: white;
-align-items: top;
-/* justify-content: stretch; */
-/* max-width: 100%; */
-
+    justify-content: center;
+    /* color: white; */
+    align-items: baseline;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-figure{
+
+figure {
     margin: 0;
     padding: 0;
-    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Needed for absolute positioning of figcaption */
+    
 }
 
-img{
+img {
+    bottom: 0;
     min-width: 0;
-    width: 100%;
-    flex: 1 1 auto;
+    height: auto;
+    align-self: baseline;
+    /* width: 80%; */
+    width: 20%; /* testing image grow */
+    
+     /* Ensure images don't exceed container width */
 }
 
-/* .image2-chapter-1 {
-    display: inline-block;
+.figcaption {
+    width: 50vw; /* Full width by default */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add some space between the image and the caption */
+    position: relative;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    padding: 10px; /* Optional: add padding for better readability */
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: add background color for better readability */
+    color: rgb(253, 253, 253); /* Optional: ensure text is visible */
+}
+
+
+
+
+/* .figures-2 {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* color: white; */
+    /* align-items: baseline;
+    padding-top: 50px;
+    padding-bottom: 50px;
+} */ 
+
+/* NOT CENTERING ARGGGH!!!! */
+
+
+
+/* .images-chapter-1 {
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 48%;
-    padding-left: 5%;
-} */
+    gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}  */
+
+
 
 .subchapter-1-block h2 {
     font-family: "becker-gothics-concave", serif;
@@ -221,12 +348,16 @@ img{
     text-align: center;
     padding-top: 10%;
     padding-bottom: 10%;
+    
 }
 
 .subchapter-1-block p {
     color:rgb(0, 0, 0);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px red, 0px 0px 1px;
+    margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 
 .chapter-2-block h2 {
@@ -244,6 +375,9 @@ img{
     color:rgb(0, 0, 0);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(198, 0, 0), 0px 0px 1px;
+    margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 
 .subchapter-2-block h2 {
@@ -261,6 +395,9 @@ img{
     color:rgb(0, 0, 0);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(0, 0, 0), 0px 0px 1px;
+    margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 
 .chapter-3-block h2 {
@@ -270,14 +407,17 @@ img{
     color:black;
     font-size: 50px;
     text-align: center;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .chapter-3-block p {
     color:rgb(16, 16, 16);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(0, 0, 0), 0px 0px 2px;
+    margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 
 .subchapter-3-block h2 {
@@ -295,6 +435,9 @@ img{
     color:rgb(24, 24, 24);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(53, 53, 53), 0px 0px 4px;
+    margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 
 .conclusion-block h2 {
@@ -312,12 +455,61 @@ img{
     color:rgb(28, 28, 28);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px rgb(43, 43, 43), 0px 0px 3px rgb(53, 53, 53), 0px 0px 4px;
+    margin-left: auto;
+   margin-right: auto;
+   width: 50%;
 }
 
+.footnotes {
+    right: 0;
+    width: 25%;
+    /* background-color: #000; */
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+}
+
+.footnotes p {
+    font-size: 15px;
+}
+
+.footnote {
+    /* top: 0; */
+    /* width: 100%; */
+    position: relative;
+    display: none; /* Initially hide the footnotes */
+}
 
 
 /* mobile version here */
 @media (max-width: 600px) {
+
+    .page-wrapper {
+        width: 100vw;
+    }
+
+    .main {
+        width: 100vw;
+    }
+
+    .title-container {
+    width: 100vw;
+    font-size: 20px;
+    }
+
+    .drawing1 {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        user-select: none;
+        pointer-events: none;
+        opacity: 0.7;
+        height: auto;
+        position: absolute;
+        transform: rotateY(45deg)
+    }
+    
+    
         /* everything that u wanna change goes here for mobile */
 }
 
