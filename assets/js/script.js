@@ -34,12 +34,12 @@ $(document).ready(function() {
         });
     });
     
-    function toggleFootnote(index) {
-        var descriptions = document.querySelectorAll('.footnote');
-        var description = descriptions[index - 1];
-        if (description.style.display === "none" || description.style.display === "") {
-            description.style.display = "block";
-        } else {
-            description.style.display = "none";
-        }
-    }
+    // function toggleFootnote(index) {
+    //     var descriptions = document.querySelectorAll('.footnote');
+    //     var description = descriptions[index - 1];
+    //     if (description.style.display === "none" || description.style.display === "") {
+    //         description.style.display = "block";
+    //     } else {
+    //         description.style.display = "none";
+    //     }
+    // }
