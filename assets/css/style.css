@@ -64,13 +64,13 @@ body * {
 
 .imagegrow img {
     border-radius: 10px;
-    z-index: 999;
     width: 40%;
     transition: transform 0.8s ease; /* Add a smooth transition effect */
 }
 
 .imagegrow:hover img {
     transform: scale(2); /* Increase the size of the image on hover */
+    z-index: 999;
 }
 
 .title-container {
