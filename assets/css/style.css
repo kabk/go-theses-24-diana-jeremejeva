@@ -40,7 +40,7 @@ body * {
     font-family: 'HKGrotesk', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(210,208,204,1);
+    background-color: rgb(112, 112, 111);
     /* background: linear-gradient(190deg, rgb(21, 21, 21) 0%, rgb(75, 30, 30) 50%, rgba(210,208,204,1) 100%); */
     /* background-image: url('../bg2.jpg');
     background-size: cover;
@@ -54,9 +54,7 @@ body * {
 
 
 
-.test {
-    width: 20%;
-}
+
 
 .imagegrow {
     width: 50vw;
@@ -77,7 +75,7 @@ body * {
 
 .title-container {
     background-color: rgb(31, 31, 31);
-    background-image: url(../background2.png);
+    background-image: url(../bggg.jpg);
     background-size: cover;
     color: black;
     font-family: "becker-gothics-concave", serif;
@@ -91,6 +89,7 @@ body * {
     display: inline-block;
     width: 100%;
 }
+
 
 /* not really working */
 
@@ -128,7 +127,7 @@ header > nav {
     pointer-events: none;
     opacity: 0.9;
     height: 100vw;
-    top: -35vh;
+    top: -32vh;
 }
 .drawing1 img {
     width: 100%;
@@ -240,13 +239,19 @@ main > p {
     padding-bottom: 10%;
 }
 
+.chapter-1-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .chapter-1-block p {
     color:rgb(0, 0, 0);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px red, 0px 0px 1px rgb(129, 0, 0), 0px 0px 0.5px rgb(129, 0, 0);
     margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   /* width: 50%; */
 }
 
 .chapter-1-block h2 {
@@ -305,6 +310,7 @@ img {
     border-radius: 5px;
     bottom: 0;
     left: 0;
+    float: left;
     padding: 10px; /* Optional: add padding for better readability */
     background-color: rgba(0, 0, 0, 0.7); /* Optional: add background color for better readability */
     color: rgb(253, 253, 253); /* Optional: ensure text is visible */
@@ -353,13 +359,19 @@ img {
     
 }
 
+.subchapter-1-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .subchapter-1-block p {
     color:rgb(0, 0, 0);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px red, 0px 0px 1px;
     margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   /* width: 50%; */
 }
 
 .chapter-2-block h2 {
@@ -373,13 +385,19 @@ img {
     padding-bottom: 20%;
 }
 
+.chapter-2-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .chapter-2-block p {
     color:rgb(0, 0, 0);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(198, 0, 0), 0px 0px 1px;
     margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   /* width: 50%; */
 }
 
 .subchapter-2-block h2 {
@@ -393,13 +411,19 @@ img {
     padding-bottom: 10%;
 }
 
+.subchapter-2-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .subchapter-2-block p {
     color:rgb(0, 0, 0);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(0, 0, 0), 0px 0px 1px;
     margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   /* width: 50%; */
 }
 
 .chapter-3-block h2 {
@@ -413,13 +437,20 @@ img {
     padding-bottom: 10%;
 }
 
+.chapter-3-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
 .chapter-3-block p {
     color:rgb(16, 16, 16);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(0, 0, 0), 0px 0px 2px;
     margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   /* width: 50%; */
 }
 
 .subchapter-3-block h2 {
@@ -433,13 +464,19 @@ img {
     padding-bottom: 10%;
 }
 
+.subchapter-3-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .subchapter-3-block p {
     color:rgb(24, 24, 24);
     font-size: 25px;
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px rgb(53, 53, 53), 0px 0px 4px;
     margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   /* width: 50%; */
 }
 
 .conclusion-block h2 {
@@ -459,7 +496,32 @@ img {
     text-shadow: 0px 0px 1px #000, 0px 0px 1px rgb(43, 43, 43), 0px 0px 3px rgb(53, 53, 53), 0px 0px 4px;
     margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   /* width: 50%; */
+}
+
+.conclusion-block {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.bibliography-block {
+    width: 60%;
+}
+
+.bibliography-block h2 {
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 30px;
+    text-align: left;
+    padding-top: 10%;
+}
+
+.bibliography-block p {
+    padding-bottom: 10%;
 }
 
 /* .footnotes {
@@ -544,6 +606,13 @@ label.sidenote-number {
     counter-increment: sidenote-counter 1;
 }
 
+footer {
+    padding-left: 20px;
+}
+
+
+
+
 .dont-break-out {
 
     /* These are technically the same, but use both */
@@ -568,13 +637,30 @@ label.sidenote-number {
 /* mobile version here */
 @media (max-width: 779px) {
 
+    .sidenote, .marginnote {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-style: italic;
+        text-align: left;
+        color: white;
+        float: none;
+        clear: none;
+        margin-right: 0;
+        width: auto;
+        display: block;
+    }
+
+    .sidenote:before {
+        content: '';
+    }
+
     html, body {
         overflow-x: hidden;
     }
 
     h2 {
         /* width: 100%; */
-        font-size: 1vh !important; 
+        font-size: 3vh !important; 
     }
 
     .page-wrapper {
@@ -610,6 +696,7 @@ label.sidenote-number {
         line-height: 30px;
     }
 
+  
     .abstract-block {
         width: 90%;
     }
@@ -634,10 +721,94 @@ label.sidenote-number {
         font-size: 18px;
     }
 
-    .sidenote p {
-        display: none;
+    .subchapter-1-block {
+        width: 90%;
     }
 
+    .subchapter-1-block p {
+        font-size: 18px;
+    }
+
+    .chapter-2-block {
+        width: 90%;
+    }
+
+    .chapter-2-block p {
+        font-size: 18px;
+    }
+
+    .subchapter-2-block {
+        width: 90%;
+    }
+
+    .subchapter-2-block p {
+        font-size: 18px;
+    }
+
+    .chapter-3-block {
+        width: 90%;
+    }
+
+    .chapter-3-block p {
+        font-size: 18px;
+    }
+
+    .subchapter-3-block {
+        width: 90%;
+    }
+
+    .subchapter-3-block p {
+        font-size: 18px;
+    }
+
+    .conclusion-block {
+        width: 90%;
+    }
+
+    .conclusion-block p {
+        font-size: 18px;
+    }
+
+    .margin-toggle:checked + .sidenote, .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        /* vertical-align: baseline; */
+        position: relative;
+    }
+
+
+    .chapter-1-block img,
+    .chapter-2-block img,
+    .chapter-3-block img,
+    .subchapter-1-block img,
+    .subchapter-2-block img,
+    .subchapter-3-block img {
+        width: 200vw; /* Adjust the width as needed */
+    }
+
+
+
+    /* figcaption {
+        height: auto;
+        text-overflow: clip;
+    } */
+
+
+   
+  /* span.sidenote {
+    display: none;
+  }
+
+  article {
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  } */
     /* .footnotes {
         right: 0;
         width: 25%;
