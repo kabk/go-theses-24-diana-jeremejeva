@@ -13,15 +13,15 @@
 html {
     counter-reset: sidenote-counter;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 20px;
-  }
+  } */
 
   /* ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
   } */
-
+/* 
   ::-webkit-scrollbar-thumb {
     background: rgb(9, 9, 9); 
     border-radius: 20px;
@@ -29,7 +29,7 @@ html {
 
   ::-webkit-scrollbar-thumb:hover {
     background: #e20202; 
-  }
+  } */
 
 
 body * {
@@ -40,8 +40,8 @@ body * {
     font-family: 'HKGrotesk', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(112, 112, 111);
-    /* background: linear-gradient(190deg, rgb(21, 21, 21) 0%, rgb(75, 30, 30) 50%, rgba(210,208,204,1) 100%); */
+    /* background-color: rgb(112, 112, 111); */
+    background: linear-gradient(190deg, rgb(112, 112, 111) 0%, rgb(195, 46, 46) 50%, rgb(192, 192, 192) 100% );
     /* background-image: url('../bg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,9 +51,6 @@ body * {
 
 
 /* FONTS DONT LOAD. fixed */
-
-
-
 
 
 .imagegrow {
@@ -73,9 +70,21 @@ body * {
     z-index: 999;
 }
 
+/* .main-title {
+    color: black;
+    font-family: "becker-gothics-concave", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    width: 100%;
+} */
+
 .title-container {
-    background-color: rgb(31, 31, 31);
-    background-image: url(../bggg.jpg);
+    /* background-color: rgb(31, 31, 31); */
+    background-image: url(../background_transparent.png);
     background-size: cover;
     color: black;
     font-family: "becker-gothics-concave", serif;
@@ -90,8 +99,6 @@ body * {
     width: 100%;
 }
 
-
-/* not really working */
 
 
 
@@ -201,7 +208,26 @@ main > p {
     -webkit-text-stroke-width: 2px; 
 }
 
-.abstract-block h2 {
+.abstract-drawing {
+    width: 100%; /* Set the width to 100% */
+    max-width: none;
+    height: auto; /* Allow the height to adjust according to the width */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.abstract-drawing img {
+    width: 100%; /* Set the width to 100% to make it take up the full width of its container */
+    height: auto; /* Allow the height to adjust according to the width */
+    max-width: none; /* Set a maximum width for the image */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* .abstract-block h2 {
     font-family: "becker-gothics-concave", serif;
     font-weight: 400;
     font-style: normal;
@@ -210,6 +236,25 @@ main > p {
     text-align: center;
     padding-top: 20%;
     padding-bottom: 20%;
+} */
+
+.intro-drawing {
+    width: 100%; /* Set the width to 100% */
+    max-width: none; /* Remove any maximum width constraint */
+    height: auto; /* Allow the height to adjust according to the width */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-drawing img {
+    width: 150%; /* Set the width to 150% to exceed the width of the container */
+    height: auto; /* Allow the height to adjust according to the width */
+    max-width: none; /* Remove any maximum width constraint */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 .introduction-block {
@@ -218,6 +263,8 @@ main > p {
    margin-right: auto;
    width: 50%;
 }
+
+
 
 .introduction-block p{
     text-shadow: 0px 0px 1px #000, 0px 0px 1px black, 0px 0px 1px red, 0px 0px 1px red, 0px 0px 1px red;
@@ -244,6 +291,26 @@ main > p {
     margin-right: auto;
     width: 50%;
 }
+
+.chapter-1-drawing {
+    width: 100%; /* Set the width to 100% */
+    max-width: none; /* Remove any maximum width constraint */
+    height: auto; /* Allow the height to adjust according to the width */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.chapter-1-drawing img {
+    width: 100%; /* Set the width to 150% to exceed the width of the container */
+    height: auto; /* Allow the height to adjust according to the width */
+    max-width: none; /* Remove any maximum width constraint */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
 
 .chapter-1-block p {
     color:rgb(0, 0, 0);
@@ -365,6 +432,25 @@ img {
     width: 50%;
 }
 
+.subchapter-1-drawing {
+    width: 100%; /* Set the width to 100% */
+    max-width: none; /* Remove any maximum width constraint */
+    height: auto; /* Allow the height to adjust according to the width */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.subchapter-1-drawing img {
+    width: 100%; /* Set the width to 150% to exceed the width of the container */
+    height: auto; /* Allow the height to adjust according to the width */
+    max-width: none; /* Remove any maximum width constraint */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
 .subchapter-1-block p {
     color:rgb(0, 0, 0);
     font-size: 25px;
@@ -389,6 +475,25 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.chapter-2-drawing {
+    width: 100%; 
+    max-width: none; 
+    height: auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.chapter-2-drawing img {
+    width: 100%; 
+    height: auto;
+    max-width: none; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 .chapter-2-block p {
@@ -417,6 +522,25 @@ img {
     width: 50%;
 }
 
+.subchapter-2-drawing {
+    width: 100%; 
+    max-width: none; 
+    height: auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.subchapter-2-drawing img {
+    width: 100%; 
+    height: auto;
+    max-width: none; 
+    display: block; 
+    margin: 0 auto; 
+}
+
 .subchapter-2-block p {
     color:rgb(0, 0, 0);
     font-size: 25px;
@@ -441,6 +565,25 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.chapter-3-drawing {
+    width: 100%; 
+    max-width: none; 
+    height: auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.chapter-3-drawing img {
+    width: 100%; 
+    height: auto;
+    max-width: none; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 
@@ -468,6 +611,25 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.subchapter-3-drawing {
+    width: 100%; 
+    max-width: none; 
+    height: auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.subchapter-3-drawing img {
+    width: 100%; 
+    height: auto;
+    max-width: none; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 .subchapter-3-block p {
@@ -504,6 +666,26 @@ img {
     margin-right: auto;
     width: 50%;
 }
+
+.conclusion-drawing {
+    width: 100%; 
+    max-width: none; 
+    height: auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.conclusion-drawing img {
+    width: 100%; 
+    height: auto;
+    max-width: none; 
+    display: block; 
+    margin: 0 auto; 
+}
+
 
 
 .bibliography-block {
@@ -637,6 +819,10 @@ footer {
 /* mobile version here */
 @media (max-width: 779px) {
 
+   .title-container span {
+    font-size: 50px;
+   }
+
     .sidenote, .marginnote {
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -674,7 +860,7 @@ footer {
     .title-container {
     width: 100vw;
     font-size: 20px;
-    line-height: 80px;
+    line-height: 60px;
     }
 
     .drawing1 {
