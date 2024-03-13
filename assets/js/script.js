@@ -33,13 +33,16 @@ $(document).ready(function() {
             }
         });
     });
+
+    // test navigation
+ 
     
-    // function toggleFootnote(index) {
-    //     var descriptions = document.querySelectorAll('.footnote');
-    //     var description = descriptions[index - 1];
-    //     if (description.style.display === "none" || description.style.display === "") {
-    //         description.style.display = "block";
-    //     } else {
-    //         description.style.display = "none";
-    //     }
-    // }
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     const toggleNavButton = document.getElementById("toggle-nav");
+    //     const mainNav = document.getElementById("main-nav");
+      
+    //     toggleNavButton.addEventListener("click", function() {
+    //       mainNav.classList.toggle("open");
+    //     });
+    //   });
+
